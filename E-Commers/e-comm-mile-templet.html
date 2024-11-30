@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .header {
+      background-color: #060758;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+    }
+    .order-summary {
+      padding: 20px;
+    }
+    .order-summary h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .order-summary table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .order-summary th, .order-summary td {
+      border: 1px solid #dddddd;
+      padding: 10px;
+      text-align: left;
+    }
+    .order-summary th {
+      background-color: #f2f2f2;
+    }
+    .total {
+      font-weight: bold;
+    }
+    .footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #555555;
+    }
+    .product-image {
+      max-width: 60px;
+      height: auto;
+    }
+    @media (max-width: 600px) {
+      .order-summary table {
+        font-size: 14px;
+      }
+      .product-image {
+        max-width: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      Your Order Summary
+    </div>
+    <div class="order-summary">
+      <h2>Order Details</h2>
+      <p>Thank you for shopping with us. Here are the details of your order:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product Image" class="product-image"></td>
+            <td>Product 1</td>
+            <td>2</td>
+            <td>$50</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td><img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Product Image" class="product-image"></td>
+            <td>Product 2</td>
+            <td>1</td>
+            <td>$75</td>
+            <td>$75</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4" class="total">Subtotal</td>
+            <td>$175</td>
+          </tr>
+          <tr>
+            <td colspan="4" class="total">Tax (10%)</td>
+            <td>$17.50</td>
+          </tr>
+          <tr>
+            <td colspan="4" class="total">Total</td>
+            <td>$192.50</td>
+          </tr>
+        </tfoot>
+      </table>
+      <p>If you have any questions about your order, feel free to <a href="mailto:support@example.com">contact us</a>.</p>
+    </div>
+    <div class="footer">
+      &copy; 2024 E-Shop. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
